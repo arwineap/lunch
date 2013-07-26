@@ -14,7 +14,6 @@ class restaurants:
         fh = open('./%s' % filename, 'r')
         output = fh.readlines()[0]
         fh.close()
-        print output
         self.restaurants = json.loads(output)
     def add(self, name, location, flags):
         # name = string
