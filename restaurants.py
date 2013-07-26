@@ -15,7 +15,7 @@ class restaurants:
         output = fh.readlines()[0]
         fh.close()
         self.restaurants = json.loads(output)
-    def add(self, name, location, flags):
+    def add(self, name, location, flags=None):
         # name = string
         # location = string
         # flags = list
